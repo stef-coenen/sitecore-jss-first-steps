@@ -6,8 +6,11 @@ export default class HelloWorld extends React.Component {
         super(props);
     }
     render() {
+        let backgroundColorStyle = { backgroundColor: this.props.params.backgroundColor };
         return (
-            <Text tag="h1" field={this.props.fields.title} />
+            <div style={backgroundColorStyle}>
+                <Text tag="h1" field={this.props.fields.title} />
+            </div>
         );
     }
 }
